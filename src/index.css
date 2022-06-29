@@ -1,13 +1,128 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* import */
+/* font-family: 'Poppins', sans-serif; */
+/* reset */
+*,*::before,*::after{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+  --paraColor:rgb(0, 47, 255);
+}
+body{
+  height:100vh;
+  width:100vw;
+  overflow-x:hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+/* desktop first */
+.container{
+  height:fit-content;
+  width:35rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-container{
+  display: flex;
+  justify-content: flex-end;
+  margin:10px auto;
+}
+.reminder{
+  background:lightgreen !important;
+  color:blue !important;
+  border-left:3px solid green;
+}
+p{
+  font-size:1.3rem;
+  font-weight: 600;
+  text-align: center;
+  color:var(--paraColor);
+}
+.task-container{
+  box-shadow:-1px 2px 5px rgb(141, 141, 209);
+}
+
+.task-container h3{
+  font-size: 1.4rem;
+}
+.task-container h4{
+  font-size: 1rem;
+}
+
+.form-control{
+  height:auto;
+  font-size:1.1rem;
+  display: flex;
+  flex-direction: column;
+  padding:8px;
+  font-weight:600;
+  width:100%;
+ background:rgb(255, 247, 129);
+}
+.form-control input[type=text]{
+  height:2rem;
+  padding:5px;
+  border:none;
+  background:transparent;
+  border-bottom: 2px solid black;
+  font-size:1.2rem;
+  width:100%;
+  outline:none;
+}
+.form-control input[type=checkbox]{
+  height: 1.1rem;
+  width:1.1rem;
+}
+.about-container{
+  margin-top:5px;
+}
+.about-container h1,.about-container h3{
+  color:var(--paraColor);
+}
+
+/* mobile & tablet */
+@media screen and (max-width:523px){
+  .header-container{
+    height:4.5rem !important;
+    font-size:1.5rem !important;
+  }
+  .container{
+    width:20rem;
+  }
+  p{
+    font-size:1rem;
+  }
+  .btn-container{
+    margin:6px auto;
+  }
+  .reminder{
+    background:lightgreen !important;
+    color:blue !important;
+    border-left:3px solid green;
+  }
+  .task-container h3{
+    font-size: 1.2rem;
+    margin-bottom:0;
+  }
+  .task-container h4{
+    font-size: 0.9rem;
+  }
+  .form-control{
+    font-size:1.1rem;
+    padding:8px;
+  }
+  .form-control input[type=text]{
+    font-size:1rem;
+  }
+  .form-control input[type=checkbox]{
+    height: 1.1rem;
+    width:1.1rem;
+  }
+  .about-container h1{
+    font-size:2rem;
+  }
 }
