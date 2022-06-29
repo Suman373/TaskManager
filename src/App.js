@@ -8,6 +8,8 @@ import Tasks from './components/Tasks';
 import Footer from './components/Footer';
 import About from './components/About';
 
+const server_url = 'https://suman373taskmanager-server.herokuapp.com/';
+
 function App() {
   const [showAdd, setAdd] = useState(false);
   // using useState hook: the state is immutable, everytime we try to create/delete/edit, we need to reacreate it and send down to the required node
@@ -26,7 +28,7 @@ function App() {
 
   //fetch all tasks from backend
   const fetchTasks = async () => {
-    const response = await fetch('http://localhost:5000/tasks');
+    const response = await fetch(`${server_url}tasks`);
     const data = await response.json();
     return data;
   }
@@ -34,7 +36,7 @@ function App() {
   //add
   const addTask = async (task) => {
     //adding/posting to the json server
-    const response = await fetch('http://localhost:5000/tasks', {
+    const response = await fetch(`${server_url}tasks`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
@@ -50,7 +52,7 @@ function App() {
   // delete
   const deletetask = async (id) => {
     //delete from the json server
-    await fetch(`http://localhost:5000/tasks/${id}`, {
+    await fetch(`${server_url}tasks/${id}`, {
       method: 'DELETE'
     })
     // filter out elements which doesn't match with the deleted id
@@ -61,7 +63,7 @@ function App() {
 
   //remind
   const fetchTask = async (id) => {
-    const response = await fetch(`http://localhost:5000/tasks/${id}`)
+    const response = await fetch(`${server_url}tasks/${id}`)
     const data = await response.json();
     return data;
   }
@@ -71,7 +73,7 @@ function App() {
     const taskForRemind = await fetchTask(id);
     const updateReminder = { ...taskForRemind, reminder: !taskForRemind.reminder }
 
-    const response = await fetch(`http://localhost:5000/tasks/${id}`, {
+    const response = await fetch(`${server_url}tasks/${id}`, {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json'
