@@ -1,3 +1,10 @@
 {
-  "tasks": []
+  "tasks": [
+    {
+      "text": "1st task",
+      "day": "29th june",
+      "reminder": false,
+      "id": 1
+    }
+  ]
 }
