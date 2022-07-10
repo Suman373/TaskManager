@@ -37,8 +37,6 @@ Your app is ready to be deployed!
 
 ![React()](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Router()](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Npm()](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) ![VSCode()](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![Nodejs()](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Heroku()](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white) ![Html()](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS()](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Javascript()](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-### Acknowledgement : Traversy Media
-
 ### Feedback
 
  If you want to contribute something to this project, create an issue first. Clone this repo and then PR with a descriptive message.
@@ -47,7 +45,7 @@ Your app is ready to be deployed!
   git clone <url>.git
  ```
  
- ### Made with React & &#10084;
-
-
+### Made with React & &#10084;
+#### Thanks to free online learning resources &#10084;
+ 
 
