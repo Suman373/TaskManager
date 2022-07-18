@@ -1,8 +1,8 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/95040233/176600586-92ebef1d-63c1-4d8f-b341-14ee1d979b65.png" height="400"></p>
 
-# TaskManager
+<h1 align="center">Task Manager 📓</h1>
 
-## Getting Started with Create React App
+<h2 align="center">Getting Started with Create React App</h2>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -31,7 +31,7 @@ Your app is ready to be deployed!
 
 ### Author : [Suman373](https://github.com/Suman373")
 
-### About : A react project of mine for understanding react useState and useEffect hooks, react-router-dom and the basic CRUD operations. The database is saved in a mock backend json server. All http requests are made from the app itself.
+### About : A react CRUD project which is generic but covers all the fundamentals of making request to backend ( here mock json server) and using all hooks and managing states using global context api.
 
 ### Technologies used
 
