@@ -43,7 +43,7 @@ p{
   color:var(--paraColor);
 }
 .task-container{
-  box-shadow:-1px 2px 5px rgb(141, 141, 209);
+  box-shadow: 2px 3px 8px rgb(71, 71, 119);
 }
 
 .task-container h3{
@@ -51,6 +51,16 @@ p{
 }
 .task-container h4{
   font-size: 1rem;
+}
+
+.task-container button{
+  position: relative;
+  top: 4px !important;
+  color: black !important;
+}
+
+.task-container button:hover{
+  color: red !important;
 }
 
 .form-control{
@@ -83,6 +93,7 @@ p{
 .about-container h1,.about-container h3{
   color:var(--paraColor);
 }
+
 
 /* mobile & tablet */
 @media screen and (max-width:523px){
