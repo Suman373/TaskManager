@@ -8,7 +8,8 @@ const Tasks = ({tasks, onDelete, onToggle}) => {
                     <button 
                     style={delStyle} 
                     onClick={()=> onDelete(task.id)}
-                    onToggle={onToggle}>X</button>
+                    onToggle={onToggle}
+                    >X</button>
                 </div>
             ))}
         </>
@@ -26,13 +27,13 @@ const delStyle={
     cursor:'pointer'
 }
 const taskStyler = {
-    height: '4rem',
+    height: '5rem',
     width: 'calc(100% - 1rem)',
     margin: '1rem auto',
     color: 'white',
     position:'relative',
     padding: '4px 10px',
-    background: 'rgb(89, 70, 300)'
+    backgroundColor:"#8189FF"
 }
 
 
